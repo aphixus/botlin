@@ -1,0 +1,70 @@
+buildscript {
+    ext.kotlin_version = '1.0.0-beta-1038'  // New
+    repositories {
+        maven { url "https://repo.spring.io/libs-release" }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // New
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.10.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'kotlin' // New
+apply plugin: 'spring-boot'
+
+war {
+    baseName = 'botlin'
+    version =  '0.1.0'
+}
+
+jar {
+    baseName = 'botlin'
+    version =  '0.1.0'
+    manifest {
+        attributes 'Main-Class': 'fi.nsev.botlin.Application'
+    }
+}
+
+springBoot {
+    mainClass = 'fi.nsev.botlin.Application'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://repo.spring.io/libs-release" }
+}
+
+// New entire sourceSets
+sourceSets {
+    main {
+        kotlin {
+            srcDir "src/main/kotlin"
+        }
+    }
+    test {
+        kotlin {
+            srcDir "test/main/kotlin"
+        }
+    }
+    main.java.srcDirs += 'src/main/kotlin'
+}
+
+dependencies {
+    compile("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version") // New
+    compile("org.springframework.boot:spring-boot-starter-web"){
+        exclude module: 'spring-boot-starter-tomcat'
+    }
+    testCompile("junit:junit")
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
