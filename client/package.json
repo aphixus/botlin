@@ -1,0 +1,14 @@
+{
+  "name": "botlin",
+  "version": "0.0.1",
+  "description": "Kotlin testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nsev",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^1.6.2"
+  }
+}

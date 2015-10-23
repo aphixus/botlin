@@ -15,12 +15,12 @@ import org.springframework.boot.context.web.SpringBootServletInitializer
 public class Application : SpringBootServletInitializer() {
     companion  object {
         @JvmStatic public fun main(args: Array<String>) {
-            SpringApplication.run(javaClass<Application>(), *args)
+            SpringApplication.run(Application::class.java, *args)
         }
     }
 
     override fun configure(application : SpringApplicationBuilder): SpringApplicationBuilder {
-        return application.sources(javaClass<Application>())
+        return application.sources(Application::class.java)
     }
 
 }

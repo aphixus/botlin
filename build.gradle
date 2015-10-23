@@ -57,12 +57,16 @@ sourceSets {
 }
 
 dependencies {
-    compile("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version") // New
-    compile("org.springframework.boot:spring-boot-starter-web"){
-        exclude module: 'spring-boot-starter-tomcat'
-    }
+    compile("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
+    compile("com.fasterxml.jackson.core:jackson-core:2.6.3")
+    compile("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.6.3")
+    compile("org.springframework.boot:spring-boot-starter-web")
+            //{
+       // exclude module: 'spring-boot-starter-tomcat'
+    //}
     testCompile("junit:junit")
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile files("wsdl-beans")
 }
 
 task wrapper(type: Wrapper) {
