@@ -1,5 +1,5 @@
 lib/
-src/main/resources/application.properties
+src/main/resources/users.properties
 
 # Created by https://www.gitignore.io/api/intellij,sublimetext,windows,osx,node,bower,eclipse,maven,gradle,vagrant
 

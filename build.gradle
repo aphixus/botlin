@@ -32,7 +32,7 @@ jar {
 }
 
 springBoot {
-    mainClass = 'fi.nsev.botlin.Application'
+    mainClass = 'fi.nsev.roadinfo.Application'
 }
 
 repositories {
