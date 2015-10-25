@@ -1,4 +1,4 @@
-package fi.nsev.botlin
+package fi.nsev.roadinfo
 
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
