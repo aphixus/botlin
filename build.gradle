@@ -19,15 +19,15 @@ apply plugin: 'kotlin' // New
 apply plugin: 'spring-boot'
 
 war {
-    baseName = 'botlin'
+    baseName = 'roadinfo-api-ms'
     version =  '0.1.0'
 }
 
 jar {
-    baseName = 'botlin'
+    baseName = 'roadinfo-api-ms'
     version =  '0.1.0'
     manifest {
-        attributes 'Main-Class': 'fi.nsev.botlin.Application'
+        attributes 'Main-Class': 'fi.nsev.roadinfo.Application'
     }
 }
 
