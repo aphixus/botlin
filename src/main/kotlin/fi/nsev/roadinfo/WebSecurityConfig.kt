@@ -21,7 +21,7 @@ open class WebSecurityConfig : WebSecurityConfigurerAdapter() {
     override protected fun configure(http: HttpSecurity) {
         http.authorizeRequests().anyRequest().access("hasRole('ROLE_API_USER')")
         //and()  not working here?
-        http.formLogin().and().httpBasic()
+        http.httpBasic()
     }
 
     @Autowired
