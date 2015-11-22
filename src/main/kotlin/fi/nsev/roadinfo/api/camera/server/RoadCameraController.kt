@@ -1,7 +1,6 @@
 package fi.nsev.roadinfo.api.camera.server
 
 import fi.digitraffic.tie.sujuvuus.schemas.CameraPresetsResponse
-import fi.digitraffic.tie.sujuvuus.schemas.RoadConditionsResponse
 import fi.nsev.roadinfo.api.camera.common.RoadCameraService
 import fi.nsev.roadinfo.api.server.ApiController
 import org.slf4j.Logger
