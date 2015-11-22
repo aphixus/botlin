@@ -4,13 +4,9 @@ import fi.digitraffic.tie.sujuvuus.schemas.FreeFlowSpeedsResponse
 import fi.nsev.roadinfo.api.fluency.common.FreeFlowSpeedService
 import fi.nsev.roadinfo.api.server.ApiServiceImpl
 import org.springframework.stereotype.Service
-import java.io.ByteArrayInputStream
 import java.net.URL
 import javax.xml.bind.JAXBContext
 import javax.xml.bind.Unmarshaller
-import javax.xml.soap.MessageFactory
-import javax.xml.soap.MimeHeaders
-import javax.xml.soap.SOAPMessage
 import javax.xml.ws.Service as wsService
 
 @Service
