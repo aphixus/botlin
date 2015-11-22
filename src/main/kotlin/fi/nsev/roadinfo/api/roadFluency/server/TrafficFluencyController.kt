@@ -1,7 +1,7 @@
-package fi.nsev.roadinfo.api.fluency.server
+package fi.nsev.roadinfo.api.roadFluency.server
 
 import fi.digitraffic.tie.sujuvuus.schemas.TrafficFluencyResponse
-import fi.nsev.roadinfo.api.fluency.common.TrafficFluencyService
+import fi.nsev.roadinfo.api.roadFluency.common.TrafficFluencyService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired

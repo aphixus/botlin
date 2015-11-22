@@ -1,8 +1,8 @@
-package fi.nsev.roadinfo.api.fluency.server
+package fi.nsev.roadinfo.api.roadFluency.server
 
 
 import fi.digitraffic.tie.sujuvuus.schemas.FreeFlowSpeedsResponse
-import fi.nsev.roadinfo.api.fluency.common.FreeFlowSpeedService
+import fi.nsev.roadinfo.api.roadFluency.common.FreeFlowSpeedService
 import fi.nsev.roadinfo.api.server.ApiController
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

@@ -1,4 +1,4 @@
-package fi.nsev.roadinfo.api.fluency.common
+package fi.nsev.roadinfo.api.roadFluency.common
 
 import fi.digitraffic.tie.sujuvuus.schemas.TrafficFluencyResponse
 

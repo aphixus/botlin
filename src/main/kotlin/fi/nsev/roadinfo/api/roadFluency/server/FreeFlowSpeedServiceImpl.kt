@@ -1,7 +1,7 @@
-package fi.nsev.roadinfo.api.fluency.server
+package fi.nsev.roadinfo.api.roadFluency.server
 
 import fi.digitraffic.tie.sujuvuus.schemas.FreeFlowSpeedsResponse
-import fi.nsev.roadinfo.api.fluency.common.FreeFlowSpeedService
+import fi.nsev.roadinfo.api.roadFluency.common.FreeFlowSpeedService
 import fi.nsev.roadinfo.api.server.ApiServiceImpl
 import org.springframework.stereotype.Service
 import java.net.URL
